@@ -198,79 +198,82 @@ let wwdCard = document.getElementById("wwdCard");
 let wwdImg = document.getElementById("wwdImg");
 
 
-
 document.querySelectorAll(".slide").forEach(slide => {
-    slide.addEventListener("mouseout", removeHovering);
     slide.addEventListener("mouseover", hovering);
-   
-  
-  });
-  
-  function hovering(event) {
+    slide.addEventListener("mouseout", removeHovering);
+});
+
+function hovering(event) {
     let wwdCard = event.currentTarget;
-  
+
+ 
     if (!wwdCard.hasAttribute('data-original-content')) {
-      let originalContent = wwdCard.innerHTML;
-      wwdCard.setAttribute('data-original-content', originalContent);
+        let originalContent = wwdCard.innerHTML;
+        wwdCard.setAttribute('data-original-content', originalContent);
     }
+
   
-    wwdCard.classList.add('hovered');
-    wwdCard.innerHTML = ''; // Clear current content
+    wwdCard.innerHTML = '';
+
   
-    // Add hover classes and styles
-    wwdCard.classList.add('hover-bg-container', 'p-2', 'd-flex', 'flex-column', 'justify-content-center');
-  
-    // Create and append the new content
+    wwdCard.classList.add('hovered', 'hover-bg-container', 'p-2', 'd-flex', 'flex-column', 'justify-content-center');
+
+   
     let innerContainer = document.createElement("div");
-    innerContainer.classList.add("d-flex", "flex-row", "justify-content-center", "inner-container");
+    innerContainer.classList.add("d-flex", "flex-column", "align-items-center");
     wwdCard.appendChild(innerContainer);
-  
+
+   
     let imageEl = document.createElement("img");
     imageEl.src = "https://res.cloudinary.com/detqp9dxl/image/upload/v1717406118/icon_pdfych.png";
     imageEl.classList.add("icon-style");
     innerContainer.appendChild(imageEl);
-  
+
+ 
     let headingEl = document.createElement("p");
-    headingEl.classList.add("web-develop-para", "mt-4");
+    headingEl.classList.add("web-develop-para", "mt-2");
     headingEl.textContent = "WEB DEVELOPMENT";
-    wwdCard.appendChild(headingEl);
-  
+    innerContainer.appendChild(headingEl);
+
+   
     let paragraphEl = document.createElement("p");
     paragraphEl.classList.add("web-develop-description");
     paragraphEl.textContent = "Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque";
-    wwdCard.appendChild(paragraphEl);
+    innerContainer.appendChild(paragraphEl);
+
+   
+    let btnContainer = document.createElement("div");
+    btnContainer.classList.add("d-flex", "flex-row", "justify-content-center", "mt-2");
+    innerContainer.appendChild(btnContainer);
+
   
-   // Create the button container
-let btnContainer = document.createElement("div");
-btnContainer.classList.add("d-flex", "flex-row", "justify-content-center", "align-items-center"); // align-items-center added for vertical alignment
-wwdCard.appendChild(btnContainer);
+    let btnElement = document.createElement("button");
+    btnElement.classList.add("btn-style", "d-flex", "align-items-center");
+    btnElement.textContent = "READ MORE";
+    btnElement.addEventListener("click", function() {
+        window.open("https://www.fylehq.com/", "_blank");
+    });
+    btnContainer.appendChild(btnElement);
 
-// Create the button element for "READ MORE"
-let btnElement = document.createElement("button");
-btnElement.classList.add("btn-style", "mt-4", "d-flex", "align-items-center"); // d-flex and align-items-center added for row alignment
-btnElement.textContent = "READ MORE";
-btnElement.addEventListener("click", function() {
-    window.open("https://www.fylehq.com/", "_blank");
-});
-btnContainer.appendChild(btnElement);
-
-// Create the image element for the arrow
-let btnImg = document.createElement("img");
-btnImg.src = "https://res.cloudinary.com/detqp9dxl/image/upload/v1717406128/arrow_jj8tp3.png";
-btnImg.classList.add("arrow", "ml-2"); // ml-2 for left margin
-
-// Append the image to the button element
-btnElement.appendChild(btnImg);
-
-  }
   
-  function removeHovering(event) {
+    let btnImg = document.createElement("img");
+    btnImg.src = "https://res.cloudinary.com/detqp9dxl/image/upload/v1717406128/arrow_jj8tp3.png";
+    btnImg.classList.add("arrow", "ml-2");
+    btnElement.appendChild(btnImg);
+}
+
+function removeHovering(event) {
     let wwdCard = event.currentTarget;
+
   
     let originalContent = wwdCard.getAttribute('data-original-content');
-    wwdCard.classList.remove('hovered', 'hover-bg-container', 'p-5', 'd-flex', 'flex-column', 'justify-content-center');
-    wwdCard.innerHTML = originalContent; 
-  }
+    wwdCard.classList.remove('hovered', 'hover-bg-container', 'p-2', 'd-flex', 'flex-column', 'justify-content-center');
+    wwdCard.innerHTML = originalContent;
+
+  
+    wwdCard.removeAttribute('data-original-content');
+}
+
   
 
 

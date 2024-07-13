@@ -6,7 +6,7 @@ body{
     box-sizing: border-box;
 }
 .header {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     position: fixed;
     z-index: 1040;
    
@@ -379,7 +379,7 @@ input[type="checkbox"]:checked:after {
     background-color: #FF3147;
     background-size: cover;
     
-     max-width: 100px; 
+     max-width: 100%; 
     height: 100%;
     max-height: 453px;
     border-radius: 10px;
@@ -475,7 +475,7 @@ input[type="checkbox"]:checked:after {
     box-sizing: border-box;
     padding: 10px;
   
-    min-height:23%;
+    min-height:20%;
     position: relative;
     overflow: hidden;
     cursor: default;
@@ -598,7 +598,7 @@ input[type="checkbox"]:checked:after {
   }
   @media (max-width: 992px) {
     .slide {
-      min-width: 80%;
+      min-width: 20%;
     }
     .mtop{
         margin-top:211px;
