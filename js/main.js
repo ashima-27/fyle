@@ -207,69 +207,61 @@ document.querySelectorAll(".slide").forEach(slide => {
 function hovering(event) {
     let wwdCard = event.currentTarget;
 
- 
+    // Save original content if not already saved
     if (!wwdCard.hasAttribute('data-original-content')) {
         let originalContent = wwdCard.innerHTML;
         wwdCard.setAttribute('data-original-content', originalContent);
     }
 
-  
+    // Clear current content
     wwdCard.innerHTML = '';
 
-  
+    // Add hover classes and styles
     wwdCard.classList.add('hovered', 'hover-bg-container', 'p-2', 'd-flex', 'flex-column', 'justify-content-center');
 
-   
+    // Create inner container for content
     let innerContainer = document.createElement("div");
     innerContainer.classList.add("d-flex", "flex-column", "align-items-center");
     wwdCard.appendChild(innerContainer);
 
-   
+    // Create image element
     let imageEl = document.createElement("img");
     imageEl.src = "https://res.cloudinary.com/detqp9dxl/image/upload/v1717406118/icon_pdfych.png";
     imageEl.classList.add("icon-style");
     innerContainer.appendChild(imageEl);
 
- 
+    // Create heading element
     let headingEl = document.createElement("p");
     headingEl.classList.add("web-develop-para", "mt-2");
     headingEl.textContent = "WEB DEVELOPMENT";
     innerContainer.appendChild(headingEl);
 
-   
+    // Create paragraph element
     let paragraphEl = document.createElement("p");
     paragraphEl.classList.add("web-develop-description");
     paragraphEl.textContent = "Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque";
     innerContainer.appendChild(paragraphEl);
 
-   
+  
     let btnContainer = document.createElement("div");
-    btnContainer.classList.add("d-flex", "flex-row", "justify-content-center", "mt-2");
+    btnContainer.classList.add("d-flex", "flex-row", "justify-content-center")
     innerContainer.appendChild(btnContainer);
 
-  
-   
-    // Create "READ MORE" button element
-let btnElement = document.createElement("button");
-btnElement.classList.add("btn-style", "d-flex", "align-items-center");
-btnElement.setAttribute("type", "button"); // Set button type to avoid form submission
-btnElement.textContent = "READ MORE";
-
-// Add event listener to open link in new tab
-btnElement.addEventListener("click", function() {
-    window.open("https://www.fylehq.com/", "_blank");
-});
-
-btnContainer.appendChild(btnElement);
-
+    let btnElement = document.createElement("button");
+    btnElement.classList.add("btn-style", "mt-4");
+    btnElement.textContent = " READ MORE";
+    btnElement.addEventListener("click", function() {
+        window.open("https://www.fylehq.com/", "_blank");
+    });
     btnContainer.appendChild(btnElement);
 
-  
     let btnImg = document.createElement("img");
     btnImg.src = "https://res.cloudinary.com/detqp9dxl/image/upload/v1717406128/arrow_jj8tp3.png";
     btnImg.classList.add("arrow", "ml-2");
     btnElement.appendChild(btnImg);
+
 }
+
 
 function removeHovering(event) {
     let wwdCard = event.currentTarget;
