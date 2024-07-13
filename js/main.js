@@ -199,6 +199,7 @@ let wwdImg = document.getElementById("wwdImg");
 
 
 document.querySelectorAll(".slide").forEach(slide => {
+    slide.addEventListener("mouseout", removeHovering);
     slide.addEventListener("mouseover", hovering);
     slide.addEventListener("mouseout", removeHovering);
 });
@@ -247,12 +248,20 @@ function hovering(event) {
     innerContainer.appendChild(btnContainer);
 
   
-    let btnElement = document.createElement("button");
-    btnElement.classList.add("btn-style", "d-flex", "align-items-center");
-    btnElement.textContent = "READ MORE";
-    btnElement.addEventListener("click", function() {
-        window.open("https://www.fylehq.com/", "_blank");
-    });
+   
+    // Create "READ MORE" button element
+let btnElement = document.createElement("button");
+btnElement.classList.add("btn-style", "d-flex", "align-items-center");
+btnElement.setAttribute("type", "button"); // Set button type to avoid form submission
+btnElement.textContent = "READ MORE";
+
+// Add event listener to open link in new tab
+btnElement.addEventListener("click", function() {
+    window.open("https://www.fylehq.com/", "_blank");
+});
+
+btnContainer.appendChild(btnElement);
+
     btnContainer.appendChild(btnElement);
 
   
