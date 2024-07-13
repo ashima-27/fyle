@@ -206,7 +206,18 @@ document.querySelectorAll(".slide").forEach(slide => {
 
 function hovering(event) {
     let wwdCard = event.currentTarget;
+  
 
+    // Remove hover effect from other elements if any
+    let allCards = document.querySelectorAll('.hovered');
+    allCards.forEach(card => {
+        card.classList.remove('hovered', 'hover-bg-container', 'p-2', 'd-flex', 'flex-column', 'justify-content-center');
+        // Restore original content
+        if (card.hasAttribute('data-original-content')) {
+            card.innerHTML = card.getAttribute('data-original-content');
+            card.removeAttribute('data-original-content');
+        }
+    });
     // Save original content if not already saved
     if (!wwdCard.hasAttribute('data-original-content')) {
         let originalContent = wwdCard.innerHTML;
@@ -230,13 +241,13 @@ function hovering(event) {
     imageEl.classList.add("icon-style");
     innerContainer.appendChild(imageEl);
 
-    // Create heading element
+  
     let headingEl = document.createElement("p");
     headingEl.classList.add("web-develop-para", "mt-2");
     headingEl.textContent = "WEB DEVELOPMENT";
     innerContainer.appendChild(headingEl);
 
-    // Create paragraph element
+   
     let paragraphEl = document.createElement("p");
     paragraphEl.classList.add("web-develop-description");
     paragraphEl.textContent = "Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque";
