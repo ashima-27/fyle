@@ -218,7 +218,7 @@ function hovering(event) {
             card.removeAttribute('data-original-content');
         }
     });
-    // Save original content if not already saved
+   
     if (!wwdCard.hasAttribute('data-original-content')) {
         let originalContent = wwdCard.innerHTML;
         wwdCard.setAttribute('data-original-content', originalContent);
