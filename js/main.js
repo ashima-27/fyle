@@ -200,8 +200,10 @@ let wwdImg = document.getElementById("wwdImg");
 
 
 document.querySelectorAll(".slide").forEach(slide => {
-    slide.addEventListener("mouseover", hovering);
     slide.addEventListener("mouseout", removeHovering);
+    slide.addEventListener("mouseover", hovering);
+   
+  
   });
   
   function hovering(event) {
