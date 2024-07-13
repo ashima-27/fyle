@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship Assignment</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/fb97d0e78d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="none,noarchive" />
+  </head>
+
+  <body>
+    <div class="header">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#HomeSection">
+            <img
+              src="https://www.fylehq.com/assets/images/svg-images/fylelogo.svg"
+              class="fyle-logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler bg-color"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link" href="#HomeSection" id="navItem1">
+                Home <span class="sr-only">(current)</span></a
+              >
+              <a class="nav-link" href="#WWDSection" id="navItem2">
+                What We Do?
+              </a>
+              <a class="nav-link" href="#WCUSection" id="navItem3">
+                Why Choose Us?
+              </a>
+              <a class="nav-link" href="#OPSection" id="navItem4">
+                Our Project
+              </a>
+              <a class="nav-link" href="#EGSection" id="navItem5">
+                Experts Growth
+              </a>
+              <!-- <a class="nav-link" href="#CFSection" id="navItem6"> Client Feedback </a> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container zone" id="HomeSection">
+      <div
+        class="row pd d-flex flex-column flex-lg-row justify-content-center flex-nowrap align-items-center"
+      >
+        <div
+          class="col-12 col-lg-6 home-section-text-container mb-4 mb-lg-0 d-flex flex-column justify-content-center"
+        >
+          <p class="award-winning-text">AWARD WINNING</p>
+          <h1 class="digital-marketing-heading">DIGITAL MARKETING AGENCY</h1>
+          <p class="home-section-description mt-4">
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+            Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
+            lacus nec risus finibus feugiat et fermentum.
+          </p>
+          <button
+            type="button"
+            id="contactUsBtnEl"
+           class="mt-4 contact-us-btn"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            CONTACT US
+          </button>
+
+          <div
+            class="modal fade zone"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title pop-up-heading" id="exampleModalLabel">
+                    Talk to us
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form id="myForm" action="https://getform.io/f/bdryrvgb" method="POST">
+                    <div class="mt-4">
+                      <label
+                        for="emailEl"
+                        class="work-email pl-2 d-none"
+                        id="workMail"
+                        >Work email</label
+                      >
+                      <input
+                        type="email"
+                        name="E-Mail"
+                        class="form-control border-none"
+                        placeholder="Work email*"
+                        id="emailEl"
+                        onfocus="clearPlaceholder()"
+                        onblur="restorePlaceholder()"
+                      />
+                    </div>
+                    <div class="mt-4 d-flex flex-column flex-md-row">
+                      <div class="mb-3 mb-md-0 mr-md-2">
+                        <label
+                          for="firstNamEl"
+                          class="work-email pl-2 d-none"
+                          id="firstName"
+                          >First name</label
+                        >
+                        <input
+                          type="text"
+                          name="First-Name"
+                          placeholder="First name*"
+                          class="form-control border-none"
+                          id="firstNamEl"
+                          onfocus="placeholderNone()"
+                          onblur="placeholderView()"
+                        />
+                      </div>
+                      <div class="ml-md-2">
+                        <label
+                          for="lastNameEl"
+                          class="work-email pl-2 d-none"
+                          id="lastName"
+                          >Last name</label
+                        >
+                        <input
+                          type="text"
+                          name="Last-Name"
+                          placeholder="Last name*"
+                          class="form-control border-none"
+                          id="lastNameEl"
+                          onfocus="nonePlaceholder()"
+                          onblur="viewPlaceholder()"
+                        />
+                      </div>
+                    </div>
+                    <div class="mt-5 d-flex align-items-center">
+                      <input
+                        type="checkbox"
+                        value="Disagreed"
+                        name="Terms-&-Conditions"
+                        class="checkbox-desing"
+                        id="checkBoxInput"
+                      />
+                      <input
+                        type="hidden"
+                        value="Agreed"
+                        name="Terms-&-Conditions"
+                        class="checkbox-desing"
+                        id="checkBoxInputHidden"
+                      />
+                      <span class="custom-checkbox"></span>
+                      <label for="checkBoxInput" class="checkbox-text-style"
+                        >I agree to Fyle's terms and conditions, and provide
+                        <br />
+                        consent to send me communication.</label
+                      >
+                    </div>
+                    <button
+                      class="form-btn-style"
+                      id="contactUsBtn"
+                      type="submit"
+                    >
+                      Contact Us
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-12 col-lg-6 m-4 d-flex justify-content-center">
+          <img
+            src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717304221/hero_cduqvu.png"
+            class="home-section-img img-fluid zoom-in"
+            alt="Hero Image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="WWDSection" class="pt-5 mtop">
+      <div class="WWD-section-bg-container">
+        <div class="container py-5">
+          <div class="row justify-content-center">
+            <div
+              class="col-12 col-md-6 WWD-Section-text-container1 text-center text-md-start"
+            >
+              <p class="award-winning-text text-left p-size">WHAT WE DO</p>
+              <h1 class="digital-marketing-heading text-left h-size">
+                SERVICES PROVIDED FOR YOU
+              </h1>
+            </div>
+            <div
+              class="col-12 col-md-6 WWD-Section-text-container2 d-flex flex-column justify-content-end"
+            >
+              <p class="wwd-description">
+                Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
+                lacus nec risus finibus feugiat et fermentum.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5 slider-part">
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="slides">
+                <div class="slide" id="wwdCard1">
+                  <img
+                    src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376780/1_qaxcs9.png"
+                    alt="Image 1"
+                    id="wwdImg"
+                  />
+                </div>
+                <div class="slide" id="wwdCard2">
+                  <img
+                    src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/2_du9r0v.png"
+                    alt="Image 2"
+                    id="wwdImg1"
+                  />
+                </div>
+                <div class="slide" id="wwdCard3">
+                  <img
+                    src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/3_xobr0b.png"
+                    alt="Image 3"
+                  />
+                </div>
+                <div class="slide" id="wwdCard4">
+                  <img
+                    src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/3_xobr0b.png"
+                    alt="Image 3"
+                  />
+                </div>
+                <div class="slide" id="wwdCard5">
+                  <img
+                    src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/2_du9r0v.png"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="slide" id="wwdCard6">
+                  <img
+                    src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/2_du9r0v.png"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="slide" id="wwdCard7">
+                  <img
+                    src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376780/1_qaxcs9.png"
+                    alt="Image 1"
+                  />
+                </div>
+                <div class="slide" id="wwdCard8">
+                  <img
+                    src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/2_du9r0v.png"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="slide" id="wwdCard9">
+                  <img
+                    src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/2_du9r0v.png"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="slide" id="wwdCard10">
+                  <img
+                    src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376780/1_qaxcs9.png"
+                    alt="Image 1"
+                  />
+                </div>
+                <div class="slide" id="wwdCard11">
+                  <img
+                    src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/2_du9r0v.png"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="slide extra">
+                  <img
+                    src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717376781/3_xobr0b.png"
+                    alt="Image 3"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="dots-container mt-2 d-flex">
+              <span class="dot" onclick="currentSlide(0)"></span>
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="WCUSection" class="container mtop">
+      <div class="WCU-section-bg-container pd">
+        <div class="text-center pt-5">
+          <p class="award-winning-text p-size pt-5">WHY CHOOSE US</p>
+          <h1 class="digital-marketing-heading text-center h-size">
+            WHY WE ARE BEST
+          </h1>
+        </div>
+
+        <div class="container mt-4">
+          <div class="row justify-content-center">
+            <div
+              class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center"
+            >
+              <div class="WCU-section-card1 p-4" id="wcuCard1">
+                <img
+                  src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717314317/1_gnmrdx.png"
+                  class="card-style img-fluid rotate-icon"
+                />
+                <h1 class="card-heading mt-3">Clarified Vision & Target</h1>
+                <p class="card-description mt-3">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center"
+            >
+              <div class="WCU-section-card1 p-4" id="wcuCard2">
+                <img
+                  src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717314237/2_rl1mcz.png"
+                  class="card-style img-fluid rotate-icon"
+                />
+                <h1 class="card-heading mt-3">High Performance</h1>
+                <p class="card-description mt-3">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center"
+            >
+              <div class="WCU-section-card1 p-4" id="wcuCard3">
+                <img
+                  src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717314237/3_ilcm4z.png"
+                  class="card-style img-fluid rotate-icon"
+                />
+                <h1 class="card-heading mt-3">Maintain Security</h1>
+                <p class="card-description mt-3">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center"
+            >
+              <div class="WCU-section-card1 p-4" id="wcuCard4">
+                <img
+                  src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717314237/4_ztct9a.png"
+                  class="card-style img-fluid rotate-icon"
+                />
+                <h1 class="card-heading mt-3">Better Strategy & Quality</h1>
+                <p class="card-description mt-3">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="OPSection" class="container pb-5">
+      <div class="OP-section-bg-container pd">
+        <div class="d-flex flex-row justify-content-center pt-5">
+          <div class="pt-5">
+            <p class="award-winning-text p-size text-center">OUR PROJECT</p>
+            <h1 class="digital-marketing-heading h-size text-center">
+              WHY WE ARE BEST
+            </h1>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                    <img src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717316959/image_oe28ow.png"
+                         class="OP-img-style img-fluid "
+                         id="changableImage"
+                         style="max-width: 100%; height: 100%; object-fit: cover"
+                    />
+                </div>
+                <div class="col-lg-4 col-sm-12 mt-sm-4 ">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-md-4 col-sm-4 OP-card p-3 d-flex flex-column justify-content-center w-100" id="project1">
+                            <h2 class="OP-card-heading" id="pheading1">Genderless Kei – Japan’s Hot</h2>
+                            <p class="OP-card-description mt-2" id="pdescriptiion1">Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+                        </div>
+                        <div class="OP-card col-lg-12 col-md-4 col-sm-4 OP-bg-card p-3 d-flex justify-content-center flex-column w-100" id="project2">
+                            <h2 class="OP-card-heading clr" id="pheading2">Better Strategy & Quality</h2>
+                            <p class="OP-card-description mt-2 clr" id="pdescriptiion2">Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+                        </div>
+                        <div class="OP-card col-lg-12 col-md-4 col-sm-4 p-3 d-flex justify-content-center flex-column w-100" id="project3">
+                            <h2 class="OP-card-heading" id="pheading3">Genderless Kei – Japan’s Hot</h2>
+                            <p class="OP-card-description mt-2" id="pdescriptiion3">Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="EGSection" class="pd mtop">
+      <div class="EG-section-bg-container pt-5  mtop">
+        <div class="text-center pt-5">
+          <p class="award-winning-text p-size">EXPERTS GROWTHS</p>
+          <h1 class="digital-marketing-heading ocg-size">OUR COMPANY GROWTH</h1>
+        </div>
+        <div
+          class="EG-section-cards-container d-flex flex-md-row row justify-content-center mt-4"
+        >
+          <div class="EG-section-card p-3 text-center mx-2 mb-4" id="card1">
+            <img
+              src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717321140/heart_2_hybeeg.png"
+              class="img-fluid rotate-icon"
+            />
+            <p class="number-style mt-2">199 +</p>
+            <p class="text-style">Satisfied Customers</p>
+          </div>
+          <div class="EG-section-card p-3 text-center mx-2 mb-4" id="card2">
+            <img
+              src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717321149/clock_3_jdr79q.png"
+              class="img-fluid rotate-icon"
+            />
+            <p class="number-style mt-2">1591 +</p>
+            <p class="text-style">Days Of Operation</p>
+          </div>
+          <div class="EG-section-card p-3 text-center mx-2 mb-4" id="card3">
+            <img
+              src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717321149/Path_4402_cb2rmm.png"
+              class="img-fluid rotate-icon"
+            />
+            <p class="number-style mt-2">283 +</p>
+            <p class="text-style">Complete Projects</p>
+          </div>
+          <div class="EG-section-card p-3 text-center mx-2 mb-4" id="card4">
+            <img
+              src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717321140/Path_4406_ekirdo.png"
+              class="img-fluid rotate-icon"
+            />
+            <p class="number-style mt-2">75 +</p>
+            <p class="text-style">Win Awards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="CFSection" class="container pt-5">
+      <div class="CF-section-bg-container">
+        <div class="text-center">
+          <p class="award-winning-text p-size">CLIENT'S FEEDBACK</p>
+          <h1 class="digital-marketing-heading ocg-size">
+            PEOPLE SAY'S ABOUT US!
+          </h1>
+          <div
+            class="CF-section-description d-flex justify-content-center mt-5"
+          >
+            <p class="text-center">
+              Jannat Tumpa The standard chunk of Lorem Ipsum used since the
+              1500s is reproduced below for those interested. Sections Bonorum
+              et Malorum original.
+            </p>
+          </div>
+          <div
+            class="mt-5 d-flex flex-column flex-md-row justify-content-center align-items-center"
+          >
+            <p class="text-style-name">JANNAT TUMPA</p>
+            <p class="pl-1 text-style-add">- COO, AMERIMAR ENTERPRISES, INC.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="Footer-section-bg-container d-flex flex-column align-items-center pt-5 pb-5"
+    >
+      <div class="text-center">
+        <img
+          src="https://res.cloudinary.com/detqp9dxl/image/upload/v1717326211/Group_500_yztrwi.png"
+          class="footer-img img-fluid"
+          alt="Footer Image"
+        />
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#cardCarousel").swipe({
+          swipeLeft: function (
+            event,
+            direction,
+            distance,
+            duration,
+            fingerCount
+          ) {
+            $(this).carousel("next");
+          },
+          swipeRight: function (
+            event,
+            direction,
+            distance,
+            duration,
+            fingerCount
+          ) {
+            $(this).carousel("prev");
+          },
+          threshold: 0,
+        });
+      });
+    </script>
+
+    <script src="../js/main.js" defer></script>
+  </body>
+</html>

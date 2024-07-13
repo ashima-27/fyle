@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+body{
+    overflow-x: hidden;
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header {
+    overflow-x: hidden;
+   
+}
+
+.fyle-logo {
+    width: 80px;
+    height: 50px;
+}
+
+.bg-color {
+    background-color: #ffffff;
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+#navItem1 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem2 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem3 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem4 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem5 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem6 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+.bg-container {
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+.home-section-bg-container {
+    background-color: #ffffff;
+}
+
+.award-winning-text {
+    color: #ff3147;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.home-section-img {
+    height: 80vh;
+}
+
+.digital-marketing-heading {
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #000000;
+   
+}
+
+.home-section-description {
+   
+    color: #000000;
+    font-weight: normal;
+    /* width: 520px; */
+    font: "normal normal normal 16px/30px Poppins";
+}
+
+.contact-us-btn {
+    height: 50px;
+    width: 160px;
+    background-color: #ff3147;
+    border-width: 0px;
+    border-radius: 2px;
+    padding: 2px;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.contact-us-btn:hover {
+    background-color: #d62839
+}
+
+.contact-us-btn:active {
+    background-color: #b02130;
+}
+
+.contact-us-btn:focus {
+    outline: none;
+}
+
+.WWD-section-bg-container {
+    background-color: #fafafa;
+    /* width: 100vw; */
+}
+
+.p-size {
+    font-size: 19px;
+}
+
+.h-size {
+    font-size: 38px;
+   
+}
+
+.wwd-description {
+    /* width: 520px; */
+    color: #000000;
+    font-family: "poppins";
+    font-size: 16px;
+}
+
+.WCU-section-card1 {
+    width: 260px;
+    border-radius: 8px;
+    cursor: default;
+}
+
+
+.card-style {
+    height: 58px;
+    width: 58px;
+}
+
+.card-heading {
+    font-family: "Bree Serif";
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.card-description {
+    font-family: "Roboto";
+    color: #000000;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.OP-img-style {
+   
+    object-fit: cover;
+}
+
+.OP-card {
+    background-color: #f6f6f6;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.OP-card-heading {
+    font-family: "Bree Serif";
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.OP-card-description {
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.OP-bg-card {
+    background-color: #ff3147;
+}
+
+.clr {
+    color: #ffffff;
+}
+
+.EG-section-bg-container {
+    background-color: #fafafa;
+  
+}
+
+.ocg-size {
+    font-size: 40px;
+}
+
+.EG-section-card {
+    background-color: #ffffff;
+    border-radius: 6px;
+    width: 260px;
+ 
+    cursor: default;
+}
+
+.number-style {
+    font-family: "Roboto";
+    color: #000000;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.text-style {
+    font-family: "Roboto";
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.CF-section-description {
+    background-image: url("https://res.cloudinary.com/detqp9dxl/image/upload/v1717323118/Quotemarks-left_ldblxl.png");
+    background-repeat: no-repeat;
+    height: 45px;
+    padding-top: 19px;
+    padding-left: 15px;
+    width: auto;
+    font-family: "Roboto";
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.text-style-name {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #ff3147;
+    font-weight: 600;
+}
+
+.text-style-add {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #808080;
+    font-weight: 500;
+}
+
+.Footer-section-bg-container {
+    background-image: url("https://res.cloudinary.com/detqp9dxl/image/upload/v1717326199/NoPath_-_Copy_kwevwj.png");
+    background-size: cover;
+  
+    padding:5px;
+  
+    background-color: #ff3147;
+}
+
+
+
+.pop-up-heading {
+    font-family: "Roboto";
+    font-size: 25px;
+    color: #2D3142;
+    font-weight: bold;
+}
+
+.border-none {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #2D3142;
+    box-shadow: none !important;
+}
+
+.checkbox-desing {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 12px;
+    appearance: none;
+    -webkit-appearance: none;
+    border-style: solid;
+    border-color: #FF3366;
+    border-width: 3px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 15px;
+    color: white;
+    padding-top: 3px;
+    display: none;
+}
+
+input[type="checkbox"]:hover {
+    background-color: #6F718F99;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #FF3366;
+
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+
+
+.checkbox-text-style {
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #616678;
+    cursor: pointer;
+}
+
+.form-btn-style {
+    height: 52px;
+    width: 100%;
+    font-size: 18px;
+    background-color: #FF3366;
+    border-width: 0px;
+    border-radius: 6px;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.form-btn-style:hover {
+    background-color: #d62839
+}
+
+.form-btn-style:active {
+    background-color: #b02130;
+}
+
+.form-btn-style:focus {
+    outline: none;
+}
+
+.work-email {
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #6F718F99;
+    background-color: #ffffff;
+}
+
+.WWD-card {
+    height: 560px;
+    width: 262px;
+    margin-left: 25px;
+}
+
+.size-of-image {
+    width: 100%;
+    height: 55%;
+}
+
+.hover-bg-container {
+    background-color: #FF3147;
+    background-size: cover;
+    
+     max-width: 100px; 
+    height: 100%;
+    max-height: 453px;
+    border-radius: 10px;
+}
+
+.icon-style {
+    height: 50px;
+    max-height: 50px;
+    width: 50px;
+    max-width: 50px;
+}
+
+.web-develop-para {
+    font-family: "Roboto";
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.inner-container {
+    text-align: center;
+}
+
+.web-develop-description {
+    font-family: "Roboto";
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.btn-style {
+    background-color: #ffffff;
+    height: 45px;
+    width: 160px;
+    border-width: 0px;
+    border-radius: 3px;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #FF3147;
+    font-weight: bold;
+}
+
+.arrow {
+    height: 10px;
+    width: 5px;
+}
+
+
+
+.WWD-section-bg-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.WWD-Section-text-container1,
+.WWD-Section-text-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.slider-part {
+    margin-left: 0;
+   
+    padding: 0 1rem;
+  
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 2.0s ease-in-out;
+    margin-left: 0;
+   
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    min-width: 23%;
+    box-sizing: border-box;
+    padding: 10px;
+  
+    min-height:23%;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide img {
+    width: 90%;
+    
+    object-fit: cover;
+}
+
+.dots-container {
+    text-align: start;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    margin: 0 5px;
+    background-color: #070707;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease;
+    position: relative;
+}
+
+.dot::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    height: 15px;
+    width: 15px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: border-color 1.0s ease;
+}
+
+.active-dot {
+    background-color: #FF3366;
+}
+
+.active-dot::after {
+    border-color: #FF3366;
+}
+
+@media (max-width: 480px) {
+    .number-style {
+        font-size: 1.5rem;
+    }
+
+    .text-style {
+        font-size: 0.9rem; 
+    }
+
+    .CF-section-description {
+        background-image: url("https://res.cloudinary.com/detqp9dxl/image/upload/v1717323118/Quotemarks-left_ldblxl.png");
+        background-repeat: no-repeat;
+        height: 45px;
+        padding-top: 19px;
+        
+     width: auto;
+        font-family: "Roboto";
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 0px !important;
+        
+    }
+}
+
+  
+  .icon-style,
+  .web-develop-para,
+  .web-develop-description,
+  .btn-style {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .slide.hovered .icon-style,
+  .slide.hovered .web-develop-para,
+  .slide.hovered .web-develop-description,
+  .slide.hovered .btn-style {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+  
+  .inner-container {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-style {
+    max-width: 50px;
+  }
+  
+  .web-develop-para,
+  .web-develop-description,
+  .btn-style {
+    text-align: center;
+  }
+  
+  @media (max-width: 576px) {
+    .slide {
+      min-width: 45%;
+    }
+    .mtop{
+        margin-top:211px;
+    }
+  }
+  @media (max-width: 992px) {
+    .slide {
+      min-width: 45%;
+    }
+    .mtop{
+        margin-top:211px;
+    }
+  }
+  .rotate-icon {
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+.rotate-icon:hover {
+    transform: rotate(180deg);
+}
+.nav-link.active {
+  
+    font-weight: bold;
+   
+    background-color: #80808021;
+  
+    color: #dc3545 !important;
+}
+.zoom-out-element:hover {
+    animation: zoomOut 1s forwards;
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+.zoom-in {
+    animation: zoomIn 1s forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.zoom-in-element {
+    opacity: 0;
+    animation: zoomIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#HomeSection{
+    height: 100vh;
+    justify-content: center;
+    
+    
+}
+#WWDSection{
+    height: 100vh;
+    justify-content: center;
+}
+#HomeSection{
+    height: 100vh;
+    justify-content: center;
+}
+
+#OPSection{
+    height: 100vh;
+    justify-content: center;
+}
+#EGSection{
+   
+    justify-content: center;
+}
+#CFSection{
+   
+    justify-content: center;
+}
+
+.pd{
+    padding-top:95px !important;
+}
+
+.modal{
+   position: fixed !important;
+   z-index: 9999 !important;
+ 
+}
+
+.zone{
+    animation: none !important;
+        opacity: 1 !important;
+   
+    animation-delay: none !important;
+
+}
+
+.btn-style {
+  
+   
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    background: #F4F4F4 0% 0% no-repeat padding-box;
+border-radius: 2px;
+    align-items: center; 
+    text-align: left;
+
+letter-spacing: 1.4px;
+color: #FF3147;
+opacity: 1;
+}
+
+.btn-style:hover {
+    background-color: #0056b3;
+}
+
+
+.arrow {
+    
+    height: 20px;
+    margin-left: 8px;
+   
+}
